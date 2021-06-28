@@ -1,0 +1,375 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="javascript/jquery-3.6.0.js"></script>
+    <script src="javascript/slideshow.js"></script>
+    <script src="javascript/form.js"></script>
+    
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
+    <title>Module 5-6 Lab</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#"><img src="images/company_logo.png" width="50" height="50">Animal Doctor</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutUs">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#vets">Veterinarians</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#appointment">Book an Appointment</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+    <div class="container text-center">
+
+        <h1><img src="images/company_logo.png" width="130" height="130"> Animal Doctor - Veterinary</h1>
+    </div>
+
+    <hr>
+    <div class="container text-center" id="aboutUs"><h1>Who we are</h1></div>
+
+    <div class="container text-center">
+        <p class="fs-2">We are a veterinary clinic specialized in dog care located at Wellington Street</p>
+        <p class="fs-2">We have been mainly servicing the dog community for over 20 years but have recently started servicing other animals</p>
+    </div>
+
+    <hr>
+    <div class="container text-center"><h1>Contact Us</h1></div>
+
+    <div class="container text-center">
+        <p class="fs-2">Address: Wellington Street</p>
+        <p class="fs-2">Phone Number: 613-111-1111</p>
+    </div>
+
+    <hr>
+    <div class="container text-center" id="vets"><h1>Our Veterinarians</h1></div>
+    <div class="row mt-5">
+        <div class="column overlayBox">
+          <img src="images/vet1.jpg" alt="Snow" style="width:100%">
+          <div class="overlay">
+            <div class="overlay-text">
+              <p>Ericka Veronica</p>
+              <p>Available on Tuedays and Thursdays</p>
+            </div>
+          </div>
+          <div>
+            <p class="fs-4">Ericka Veronica</p>
+            <p class="fs-4">Available on Tuedays and Thursdays</p>
+          </div>
+        </div>
+        <div class="column overlayBox">
+            <img src="images/vet2.jpg" alt="Snow" style="width:100%">
+            <div class="overlay">
+              <div class="overlay-text">
+                <p>Terence Chester</p>
+                <p>Available on Mondays and Fridays</p>
+              </div>
+            </div>
+            <div>
+              <p class="fs-4">Terence Chester</p>
+              <p class="fs-4">Available on Mondays and Fridays</p>
+            </div>
+          </div>
+          <div class="column overlayBox">
+            <img src="images/vet3.jpg" alt="Snow" style="width:100%">
+            <div class="overlay">
+              <div class="overlay-text">
+                <p>Cassandra Gladwyn</p>
+                <p>Available on Wednesdays and Saturdays</p>
+              </div>
+            </div>
+
+            <div>
+              <p class="fs-4">Cassandra Gladwyn</p>
+              <p class="fs-4">Available on Wednesdays and Saturdays</p>
+            </div>
+          </div>
+      </div>
+    
+
+    <hr>
+    <div class="container text-center" id="services"><h1>Our Services</h1></div>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade firstSlide">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/service1.jpeg" class="slideshowImage">
+            <div class="container text-center">
+                <p class="fs-4">We offer nail cutting services to pet owners who wish to have professionals cut their pets nails</p>
+                <p class="fs-4"><span class="price">$5</span></p>
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/service2.jpeg" class="slideshowImage">
+            <div class="container text-center">
+                <p class="fs-4">We offer pet massage services to help with pain relief for dogs who are growing old</p>
+                <p class="fs-4"><span class="price">$20-$50</span></p>
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/service3.jpeg" class="slideshowImage">
+            <div class="container text-center">
+                <p class="fs-4">We offer pet vaccinations for a large variety of diseases</p>
+                <p class="fs-4"><span class="price">$100</span> + the price of the vaccine</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/service4.jpeg" class="slideshowImage">
+            <div class="container text-center">
+                <p class="fs-4">We offer surgery for pets suffering from a variety of ailments</p>
+                <p class="fs-4">Prices are negotiated directly with the clinic, please contact us for more information</p>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/service5.jpeg" class="slideshowImage">
+            <div class="container text-center">
+                <p class="fs-4">We offer drug refills for any prescreptions your pets might have</p>
+                <p class="fs-4"><span class="price">$5</span> + the price of the drugs</p>
+            </div>
+        </div>
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <hr>
+    <div class="container text-center" id="appointment"><h1>Book an Appointment</h1></div>
+
+    <form class="container w-50 border navbar-background mb-5 p-5 needs-validation" novalidate>
+
+      <div class="form-group mb-3">
+        <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/identification-documents.png"/>Name</label>
+        <input type="text" id="name"placeholder="Enter Name here" class="form-control" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please add your full name here.
+        </div>
+      </div>
+      <div class="form-group mb-3">
+        <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/email-open--v1.png"/>E-Mail</label> <span><img src="https://img.icons8.com/ultraviolet/40/000000/info.png" width="30" data-toggle="tooltip" data-placement="right" title="Please add your email here using the *****@domain.com format where domain is your provider"></span>
+        <input type="text" placeholder="Enter E-Mail Here" class="form-control" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please add your email here.
+        </div>
+        <small id="emailHelp" class="form-text text-muted">Emails aren't shared to anyone but will be used to contact you</small>
+      </div>
+
+      <div class="form-group mb-3">
+          <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/phone.png"/>Phone Number</label> <span><img src="https://img.icons8.com/ultraviolet/40/000000/info.png" width="30" data-toggle="tooltip" data-placement="right" title="Please add your phone number without the dashes or parentheses, the website will add the dashes and parentheses automaticaly when you finish inputting your number"></span>
+          <input type="tel" id="tel" placeholder="(XXX) XXX-XXXX" class="form-control" minlength="14" maxlength="14" pattern="^(?=.*[0-9])[-()0-9]+$" required>
+          
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please add your full 12 digit phone number here.
+          </div>
+          <small id="emailHelp" class="form-text text-muted">Phone numbers aren't shared to anyone but will be used to contact you</small>
+      </div>
+
+      <div class="form-group mb-5">
+          <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/home-page.png"/>Address</label>
+          <input type="text" placeholder="Enter your address here" class="form-control" required>
+          <small id="emailHelp" class="form-text text-muted"></small>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please enter your full address here.
+          </div>
+      </div>
+
+      <div class="form-group mb-5">
+
+          
+        <label class="question mb-2"><img src="https://img.icons8.com/ultraviolet/40/000000/medical-doctor.png"/>Which doctor would you prefer?</label>
+        <div></div>
+        <small class="mb-2">Note that picking a doctor changes the available days to schedule</small>
+        
+        <select id="therapist" class="form-control" onchange="change(this.value)">
+          <option value="Any Doctor">Any Doctor</option>
+          <option value="Ericka Veronica">Ericka Veronica (Tuesdays and Wednesdays)</option>
+          <option value="Terence Chester">Terence Chester (Mondays and Fridays)</option>
+          <option value="Cassandra Gladwyn">Cassandra Gladwyn (Wednesdays and Fridays)</option>
+        </select>
+      </div>
+
+      <div class="mb-5">
+        <label class="question mb-2"><img src="https://img.icons8.com/ultraviolet/40/000000/cat-footprint.png"/>What is the species of your animal?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Dog
+          </label>
+          
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            Cat
+          </label>
+        </div>
+        
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+          <label class="form-check-label" for="exampleRadios3">
+            Hamster
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+          <label class="form-check-label" for="exampleRadios4">
+            Rabbit
+          </label>
+        </div> 
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+          <label class="form-check-label" for="exampleRadios5">
+            Other
+          </label>
+          <input type="text" placeholder="" class="form-control">
+        </div> 
+      </div>
+      <br>
+
+      <div class="form-group mb-5">
+        <label class="question mb-2"><img src="https://img.icons8.com/ultraviolet/40/000000/service-bell.png"/>What services do you need for your appointment?</label>
+        <select id="service" class="form-control" required>
+            <option value="Nail Cutting">Nail Cutting - $5</option>
+            <option value="Massage">Massage - $20-$50</option>
+            <option value="Vaccination">Vaccination - $100 + Price of Vaccine</option>
+            <option value="Surgery">Surgery - Contact for Price</option>
+            <option value="Drug Refill">Drug Refill - $5 + Price of Drugs</option>
+        </select>
+      </div>
+      
+
+      <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/calendar--v1.png"/>Pick your appointment date:</label> <span><img src="https://img.icons8.com/ultraviolet/40/000000/info.png" width="30" data-toggle="tooltip" data-placement="right" title="Certain dates have been restricted depending on if the selected doctor is available that day or not"></span>
+      <div class="form-group mb-5">
+        <input id="datePicker" type="text" class="form-control text-muted" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please select a date for your appointment.
+        </div>
+      </div>
+
+      <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/clock--v1.png"/>Pick your appointment Time:</label> <span><img src="https://img.icons8.com/ultraviolet/40/000000/info.png" width="30" data-toggle="tooltip" data-placement="right" title="Certain dates have been restricted depending on if the selected doctor is available that day or not"></span>
+      <div class="form-group mb-5">
+        <input id="timePicker" type="time" class="form-control text-muted" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please select a time for your appointment.
+        </div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label class="question"><img src="https://img.icons8.com/ultraviolet/40/000000/bank-card-back-side.png"/>Credit Card</label> <span><img src="https://img.icons8.com/ultraviolet/40/000000/info.png" width="30" data-toggle="tooltip" data-placement="right" title="Please add your credit card number without the spaces, the website will add the spaces automaticaly when you finish inputting your number"></span>
+        <input type="tel" id="credit" placeholder="**** **** **** ****" class="form-control" maxlength="19" pattern="^\d{4} \d{4} \d{4} \d{4}$"required>
+        <small id="emailHelp" class="form-text text-muted">We ask you for this information in case you don't show up to the appointment. In such a case 20 dollars is charged as a no-show fee</small>
+      </div>
+      
+      <div class="container text-center">
+        <button type="submit" class="btn btn-success m-*-auto">Book an appointment</button>
+    </div>
+    <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              else{
+                alert(`Dear ${$("#name").val()},\nYour appointment for ${$("#service").val()} has been scheduled for you on the  ${$('#datePicker').val()} at ${$('#timePicker').val()}\nThe vet you booked with is: ${$("#therapist").val()}`)
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+    </form>
+
+    
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
